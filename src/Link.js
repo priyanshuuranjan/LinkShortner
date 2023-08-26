@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import { db } from "./firebase";
 
-function GoLink() {
+export default function Link() {
   const { code } = useParams();
   const history = useHistory();
   const [url, setUrl] = useState("");
@@ -23,4 +23,4 @@ function GoLink() {
   return <div></div>;
 }
 
-export default GoLink;
+
