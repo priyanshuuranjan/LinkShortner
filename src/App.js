@@ -1,4 +1,5 @@
-import Home from "./Components/Home";
+import Home from "./Home";
+import Link from "./Link";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
@@ -9,6 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/l/:code" component={Link} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,16 +1,13 @@
-import firebase from "firebase/compat/app";
-import "firebase/compat/firestore";
+import firebase from "firebase";
 
-//
 const firebaseConfig = {
-  apiKey: "AIzaSyArQ9J3WNhiaDsVBI-Sb0Y748WRlsaCOc8",
-  authDomain: "link-shortner-2f466.firebaseapp.com",
-  projectId: "link-shortner-2f466",
-  storageBucket: "link-shortner-2f466.appspot.com",
-  messagingSenderId: "876581122310",
-  appId: "1:876581122310:web:7590bae595139735cc2e87",
+  apiKey: "AIzaSyBVMEIjBqVLghZXjY9_dynWfrbF8Waq7v8",
+  authDomain: "link-shortner-ff232.firebaseapp.com",
+  projectId: "link-shortner-ff232",
+  storageBucket: "link-shortner-ff232.appspot.com",
+  messagingSenderId: "123970242151",
+  appId: "1:123970242151:web:a05eb96e84245fc78a76c2",
 };
 
 const app = firebase.initializeApp(firebaseConfig);
-const db = app.firestore();
-export default db;
+export const db = app.firestore();
