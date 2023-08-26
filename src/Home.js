@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { db } from "./firebase";
 import { v4 as uuidv4 } from "uuid";
-// import { IconButton } from "@material-ui/core";
-// import { Send } from "@material-ui/icons";
+import { IconButton } from "@material-ui/core";
+import { Send } from "@material-ui/icons";
 export default function Home() {
   const [url, setUrl] = useState("");
 
@@ -29,10 +29,10 @@ export default function Home() {
             onChange={(e) => setUrl(e.target.value)}
             placeholder="Enter the URL here..."
           />
-          <input type="submit" value="Shorten Url"/>
-          {/* <IconButton type="submit">
+          {/* <input type="submit" value="Shorten Url"/> */}
+          <IconButton type="submit">
             <Send />
-          </IconButton> */}
+          </IconButton>
         </div>
       </form>
     </div>
