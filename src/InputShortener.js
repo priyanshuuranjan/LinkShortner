@@ -36,6 +36,10 @@ const InputShortener = ({ setInputValue }) => {
 
 export default InputShortener;
 
+
+
+
+/* this code works same but this push only link that is provided in input but upper code push both id and shorten link in firebase  */
 // import { useState } from "react";
 // import { db } from "./firebase";
 
