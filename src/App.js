@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './App.css';
-import BackgroundAnimate from './BackgroundAnimate';
-import InputShortener from './InputShortener';
-import LinkResult from './LinkResult';
+import BackgroundAnimate from './Components/BackgroundAnimate';
+import InputShortener from './Components/InputShortener';
+import LinkResult from './Components/LinkResult';
 
 function App() {
   const [inputValue, setInputValue] = useState("");
