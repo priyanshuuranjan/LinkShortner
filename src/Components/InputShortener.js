@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 const InputShortener = ({ setInputValue }) => {
   const [value, setValue] = useState("");
 
+  // To get value and Store data in firebase
   const handleClick = async (e) => {
     e.preventDefault();
     let id = uuidv4();
@@ -35,9 +36,6 @@ const InputShortener = ({ setInputValue }) => {
 };
 
 export default InputShortener;
-
-
-
 
 /* this code works same but this push only link that is provided in input but upper code push both id and shorten link in firebase  */
 // import { useState } from "react";
